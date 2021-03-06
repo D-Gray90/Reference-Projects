@@ -15,10 +15,14 @@ They all were made using functional components instead of class components. I
 just felt functional components were easier to learn from. Each of These projects 
 except one can be found in the react native documentation with slight
 differences. It was better for me to have them all in one place. They are all 
-extensively commented to show the in's and out's of react native. The Touchable Highlight
+extensively commented to show the in's and out's of react native. The touchable highlight
 project is from a book called "Learning React Native" by Bonnie Eisenman. It's a good 
 example of how to create a customized button if the buttons in react native might not 
-suit your needs. To be able to use these files you must have a basic understanding of 
+suit your needs. The navigation app is tricky. Navigation in react native is a community
+solution. It requires you to install the required dependencies in your project folder.
+Information about this can be found here: https://reactnative.dev/docs/navigation
+
+To be able to use these files you must have a basic understanding of 
 react native. You should look a the getting started section of the documentation.
 https://reactnative.dev/docs/getting-started
 
