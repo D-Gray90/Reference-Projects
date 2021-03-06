@@ -1,0 +1,130 @@
+/*Main Styles*/
+
+body{
+	margin: 0px;
+}
+
+.container{
+	display: grid;						/*Grid Display*/
+	grid-template-columns: 1fr;			/*Fills the remaining space in a grid for 1 coulumn*/
+}
+
+/*Nav Styles*/
+
+.nav-wrapper{
+	display:flex;						/*Content will be displayed in a flexible orginized look(Left to Right)*/
+	justify-content: space-between;		/*Puts space between content*/
+	padding: 38px;						/*38 pixels will be put between the top, right, bottom, and left( this is shorthand for 38px 38px 38px 38px)*/
+}
+
+.left-nav{
+	display: flex;
+}
+
+.nav-wrapper > .left-nav > div{
+	margin-right: 20px;					/*20 pixel margin to the right of the element*/
+	font-size: 0.9em;
+	text-transform: uppercase; 			/*Change text to uppercase letters*/
+}
+
+.nav-link{
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;		/*The change from no border bottom to a border bottom is half a second*/
+}
+
+.nav-link a{
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s				/*The change from an inactive link color to an active link color is half a second*/
+}
+
+.nav-link:hover{
+	border-bottom: 1px solid black;
+}
+
+.nav-link a:hover{
+	color: black;
+}
+
+.active-nav-link{
+	border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+	color: black !important;			/*This style will not be overwritten and will ignore other styles*/
+}
+
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;/*Fills the remaining space in a grid for 3 columns*/
+}
+
+.portfolio-item-wrapper{
+	position: relative;					/*Allows for flexibilty of child elements,
+										also neccesary for absolution position elements*/
+}
+
+.portfolio-img-background{
+	height: 350px;
+	width: 100%;						/*Width adjusts automatically, Full Width*/
+	background-size: cover;				/*Crop images to fit to one size, Covers The Space*/
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+	position: absolute; 				/*Fixed position*/
+	top: 0; 							/*Positioned at the top of the space*/
+	display: flex;
+	flex-direction: column;				/*Content displyed in a Column*/
+	justify-content: center;			/*Center left to right*/
+	align-items: center;				/*Center top to bottom*/
+	height: 100%;						/*Full height*/
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.logo-wrapper img{
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle{
+	transition: 1s;						/*The Subtitle for the given image will appear in 1 second*/
+	font-weight: 600;
+	color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+	font-weight: 600;					/*The boldness of text,  'bold' is 700*/
+	color: lightseagreen;
+}
+
+.img-darken{
+	transition: 1s;						/*The image will darken in 1 second*/
+	filter: brightness(10%);
+}
+
+/*About Styles*/
+
+.two-column-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;		/*Fills the remaining space in a grid for 2 coulumn*/
+}
+
+.profile-img-wrapper img{
+	width:100%;
+}
+
+.profile-content-wrapper{
+	padding:30px;
+}
+
+.profile-content-wrapper h1{
+	color: lightseagreen;
+}
